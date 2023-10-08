@@ -1,0 +1,27 @@
+{
+  "name": "fingerpose-ext",
+  "version": "1.0.0",
+  "description": "create landmark array from keypoints & keypoints3D arrays",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/808vita/fingerpose-ext.git"
+  },
+  "keywords": [
+    "handpose gestures",
+    "fingerpose gestures",
+    "fingerpose custom gestures",
+    "ai gestures",
+    "emoji gestures",
+    "finger gestures"
+  ],
+  "author": "808vita",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/808vita/fingerpose-ext/issues"
+  },
+  "homepage": "https://github.com/808vita/fingerpose-ext#readme"
+}
