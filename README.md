@@ -21,12 +21,9 @@ yarn add fingerpose-ext
 
 ## Usage
 
-### Include "handpose" (newer version),"fingerpose" and this library
+### Include "handpose" (newer version), "tfjsWasm","fingerpose",etc. and this library
 
 ```js
-import * as tf from "@tensorflow/tfjs";
-import * as handpose from "@tensorflow-models/handpose";
-import "@tensorflow/tfjs-backend-webgl";
 import * as fp from "fingerpose";
 import createLandmarks from "fingerpose-ext";
 ```
@@ -36,13 +33,18 @@ import createLandmarks from "fingerpose-ext";
 ```js
 const model = handPoseDetection.SupportedModels.MediaPipeHands;
 const detectorConfig = {
-  runtime: 'mediapipe', // or 'tfjs',
-  solutionPath: 'https://cdn.jsdelivr.net/npm/@mediapipe/hands',
-  modelType: 'full'
-}
+  runtime: "mediapipe", // or 'tfjs',
+  solutionPath: "https://cdn.jsdelivr.net/npm/@mediapipe/hands",
+  modelType: "full",
+};
+const detector = await handPoseDetection.createDetector(model, detectorConfig);
+
 const hands = await detector.estimateHands(image);
 ```
+
 ### Example output
+
+```json
 [
   {
     score: 0.8,
@@ -59,6 +61,7 @@ const hands = await detector.estimateHands(image);
     ]
   }
 ]
+```
 
 ### Estimate the gestures
 

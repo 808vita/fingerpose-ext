@@ -1,6 +1,6 @@
 {
   "name": "fingerpose-ext",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Create landmark array from keypoints & keypoints3D arrays from the predictions of new tensorflow hand pose model",
   "main": "index.js",
   "scripts": {
