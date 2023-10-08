@@ -66,7 +66,7 @@ const hands = await detector.estimateHands(image);
 ### Estimate the gestures
 
 ```js
-let landmarks = createLandmarks(prediction[0]);
+let landmarks = createLandmarks(hands[0]);
 const estimatedGestures = GE.estimate(landmarks, 8.5);
 ```
 
